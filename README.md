@@ -65,3 +65,24 @@ To start the development server, run:
 
 The server should be running at `http://localhost:8000`.
 
+API Endpoints
+
+1. Book Management
+GET http://localhost:8000/api/books/ - Retrieve all books.
+GET http://localhost:8000/api/books/{id}/ - Retrieve details of a specific book.
+POST http://localhost:8000/api/books/ - Add a new book (requires authentication).
+PUT http://localhost:8000/api/books/{id}/ - Update book details (requires authentication).
+DELETE http://localhost:8000/api/books/{id}/ - Remove a book (requires authentication).
+
+2. Member Management
+GET http://localhost:8000/api/members/ - Retrieve all members (requires authentication).
+GET http://localhost:8000/api/members/{id}/ - Retrieve details of a specific member (requires authentication).
+POST http://localhost:8000/api/members/ - Register a new member (requires authentication).
+PUT http://localhost:8000/api/members/{id}/ - Update member details (requires authentication).
+DELETE http://localhost:8000/api/members/{id}/ - Remove a member (requires authentication).
+
+3. Loan Management
+POST http://localhost:8000/api/loans/ - Borrow a book (requires authentication).
+PUT http://localhost:8000/api/loans/{id}/return-book/ - Return a book (requires authentication).
+GET http://localhost:8000/api/loans/ - Retrieve all loans (requires authentication).
+GET http://localhost:8000/api/loans/{id}/ - Retrieve details of a specific loan (requires authentication).
