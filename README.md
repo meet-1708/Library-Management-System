@@ -38,7 +38,7 @@ Make sure you have PostgreSQL installed and running. You can download and instal
 
 - Grant all privileges to the user:
   ```sql
-  GRANT ALL PRIVILEGES ON DATABASE library_db TO library_user;
+  GRANT ALL PRIVILEGES ON DATABASE library_db TO meet_patel;
   ```
 
 - Update your `settings.py` to configure PostgreSQL as the database engine:
@@ -47,8 +47,8 @@ Make sure you have PostgreSQL installed and running. You can download and instal
       'default': {
           'ENGINE': 'django.db.backends.postgresql',
           'NAME': 'library_db',
-          'USER': 'library_user',
-          'PASSWORD': 'yourpassword',
+          'USER': 'meet_patel',
+          'PASSWORD': '1243',
           'HOST': 'localhost',
           'PORT': '5432',
       }
