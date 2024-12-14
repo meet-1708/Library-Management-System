@@ -10,6 +10,7 @@ class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     filter_backends = [SearchFilter]
+    filterset_fields = ['title', 'author', 'genre']
     search_fields = ['title', 'author', 'genre']
 
 class MemberViewSet(viewsets.ModelViewSet):
